@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f6f4fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h2 {
+  font-size: 20px;
+  color: #2c2c2c;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #5b2a86;
+}
+
+/* HERO */
+.hero {
+  height: 330px;
+  background: linear-gradient(90deg, #2b124c, #5b2a86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.hero-btn {
+  background: white;
+  color: #2b124c;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  background: #e6e6e6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 60px;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+  font-size: 26px;
+  color: #2b124c;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.desc {
+  color: #555;
+}
+
+/* LISTA TRABAJOS */
+.work-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.work-list li {
+  margin: 12px 0;
+  padding: 12px;
+  background: #f3ecfa;
+  border-radius: 12px;
+  border: 1px solid #e1d3f3;
+  transition: 0.2s;
+}
+
+.work-list li:hover {
+  transform: translateY(-3px);
+}
+
+.work-list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5b2a86;
+  font-size: 16px;
+}
+
+.work-list a:hover {
+  text-decoration: underline;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  background: #5b2a86;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2b124c;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #5b2a86;
+  color: #5b2a86;
+}
+
+.btn-outline:hover {
+  background: #5b2a86;
+  color: white;
+}
+
+/* CAJA INFO */
+.info-box {
+  background: #f3ecfa;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e1d3f3;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background: #2b124c;
+  color: white;
+  padding: 18px;
+  font-size: 14px;
+}
+/* ====== ESTILO "PDF" (para páginas de trabajos) ====== */
+.pdf-page {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 34px 34px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+.pdf-title {
+  color: #b3006e; /* fucsia/morado tipo PDF */
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.pdf-subtitle {
+  color: #b3006e;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 22px 0 10px;
+}
+
+.pdf-text {
+  color: #111;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.pdf-list {
+  margin: 10px 0 18px 22px;
+  color: #111;
+  font-size: 15px;
+}
+
+.pdf-bullets {
+  margin: 10px 0 18px 18px;
+  color: #111;
+  font-size: 15px;
+}
+
+.pdf-label {
+  font-weight: 700;
+}
+
+.pdf-img {
+  width: 100%;
+  max-width: 720px;
+  display: block;
+  margin: 14px auto 6px;
+  border-radius: 10px;
+}
+
+.pdf-caption {
+  text-align: left;
+  color: #222;
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.pdf-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 18px;
+  font-size: 14px;
+}
+
+.pdf-table th,
+.pdf-table td {
+  border: 1px solid #222;
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.pdf-table th {
+  background: #f7f0fb;
+  color: #111;
+  font-weight: 800;
+}
+
+.pdf-sep {
+  height: 1px;
+  background: #ddd;
+  margin: 22px 0;
+}
